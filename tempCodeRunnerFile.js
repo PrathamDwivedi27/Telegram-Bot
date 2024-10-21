@@ -1,0 +1,1 @@
+bot.on('emoji',(ctx)=>ctx.reply('🥺'))
