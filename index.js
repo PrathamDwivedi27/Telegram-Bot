@@ -5,7 +5,7 @@ import {power,isPerfectSquare,isPrime} from './more_functions.js'
 import { Telegraf } from 'telegraf';
 
 // const power=power(5,3);
-const bot=new Telegraf('7015789504:AAG31xSXdmdkdx3Js0JrWxA5khUD5W-W8qc');
+const bot=new Telegraf(process.env.TELEGRAM_TOKEN);
 
 bot.start((ctx)=> ctx.reply('Welcome to coding bot . Which code do you want?'));
 bot.command('seive of erastothenes',(ctx)=>ctx.reply(seiveOfErastothenes));
